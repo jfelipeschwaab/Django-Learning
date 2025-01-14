@@ -156,4 +156,19 @@ Ex:
 <QuerySet [<Answer: No>, <Answer: Yes>, <Answer: It is a number>]>
 
 """
+
+"""
+8. Reverse Relationships
+
+Se quisessemos fazer o contrário, achar todas as respostas relacioandas com uma Question? essa query é chamada de 
+reverse relation, já que o relacionamento agora está o contrário, a table que esta fazendo a querying não contém a FK
+
+para isso, devemos utilizar o set:
+
+>>> question_instance.answer_set.all()
+
+Por convenção, a propriedade _set é procedida por um lowercase do nome do Model.
+
+
+"""
     
